@@ -1,9 +1,10 @@
-// 
+
 pipeline {
     agent any
 
     environment {
-        mavenHome = tool name: 'jenkins-maven', type: 'Maven'
+        // mavenHome = tool name: 'jenkins-maven', type: 'Maven'
+         MAVEN_HOME = 'C:\Users\ssandhiya\Downloads\apache-maven-3.9.9-bin\apache-maven-3.9.9' 
     }
 
     tools {
