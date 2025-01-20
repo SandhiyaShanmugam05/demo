@@ -2,6 +2,7 @@
 pipeline {
 	agent any
 	environment {
+		// mavenHome = tool 'jenkins-maven'
 		mavenHome = tool 'jenkins-maven'
 	}
 	tools {
@@ -10,7 +11,8 @@ pipeline {
 	stages {
 		stage('Build'){
 			steps {
-				bat "mvn clean install -DskipTests"
+				// bat "mvn clean install -DskipTests"
+				bat "${mavenHome}/bin/mvn clean install -DskipTests"
 			}
 		}
 		stage('Test'){
