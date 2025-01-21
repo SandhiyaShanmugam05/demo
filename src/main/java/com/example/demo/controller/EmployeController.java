@@ -30,7 +30,7 @@ public class EmployeController {
 
     @GetMapping("/helo")
      public String getName(){
-        return "Hellow world";
+        return "Welcome";
      }
 
      @PostMapping("/save")
