@@ -85,5 +85,12 @@
 			</plugin>
 		</plugins>
 	</build>
+	<distributionManagement>
+    <repository>
+        <id>github</id>
+        <url>https://maven.pkg.github.com/SandhiyaShanmugam05/demo</url> <!-- Replace with your repository path -->
+    </repository>
+</distributionManagement>
+
 
 </project>
